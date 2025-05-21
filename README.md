@@ -11,8 +11,6 @@
   <a href="#example">Example</a>
 </p>
 
-![screenshot](https://i.imgur.com/TaUsA28.png)
-
 ---
 
 ## 🧠 Context
