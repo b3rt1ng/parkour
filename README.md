@@ -37,7 +37,7 @@ This project was developed as part of a student initiative at Paris Cité Univer
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/youruser/parkour
+git clone https://github.com/b3rt1ng/parkour
 cd parkour
 ```
 
