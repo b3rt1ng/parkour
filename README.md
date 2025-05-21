@@ -1,5 +1,5 @@
 <h1 align="center">
-  🌲 wtree
+  🏃 parkour
 </h1>
 
 <h4 align="center">Visualize a website’s structure from the command line</h4>
@@ -11,11 +11,13 @@
   <a href="#example">Example</a>
 </p>
 
+![screenshot](https://i.imgur.com/TaUsA28.png)
+
 ---
 
 ## 🧠 Context
 
-**wtree** is a Command Line Interface (CLI) tool designed to map out the structure of a website starting from its homepage. This project was created in an academic context focused on cybersecurity and surface mapping. wtree lets you visualize accessible paths, detect exposed directories or files, and perform basic keyword analysis on web content.
+**parkour** is a Command Line Interface (CLI) tool designed to map out the structure of a website starting from its homepage. This project was created in an academic context focused on cybersecurity and surface mapping. parkour lets you visualize accessible paths, detect exposed directories or files, and perform basic keyword analysis on web content.
 
 This project was developed as part of a student initiative at Paris Cité University.
 
@@ -37,8 +39,8 @@ This project was developed as part of a student initiative at Paris Cité Univer
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/youruser/wtree
-cd wtree
+git clone https://github.com/youruser/parkour
+cd parkour
 ```
 
 ### 2. Run the script
@@ -63,21 +65,21 @@ python3 main.py https://example.com -f -r -k login,password,admin
 
 ### 🔧 Build as an Executable
 
-You can package `wtree` into a single standalone binary using `pyinstaller`:
+You can package `parkour` into a standalone binary using `pyinstaller`:
 
 ```bash
-# Install pyinstaller if not already installed
+# Install pyinstaller if needed
 pip install pyinstaller
 
 # Build the executable
-pyinstaller --onefile --name wtree main.py
+pyinstaller --onefile --name parkour main.py
 
-# Move it to a system path
-sudo cp dist/wtree /usr/bin/
-sudo chmod +x /usr/bin/wtree
+# Move it to a global binary path
+sudo cp dist/parkour /usr/bin/
+sudo chmod +x /usr/bin/parkour
 
-# Run from anywhere
-wtree https://example.com -r -f
+# Now you can run it from anywhere
+parkour https://example.com -r -f
 ```
 
 ---
@@ -88,6 +90,14 @@ Here is a sample output in the terminal:
 
 ![screenshot](https://i.imgur.com/TaUsA28.png)
 
+---
+
+## 📁 Project Structure
+
+- `main.py` : Entry point, handles arguments and core logic.
+- `mapper.py` : Retrieves links and builds the site structure.
+- `utils.py` : CLI output utilities, keyword scanning, color rendering, etc.
+- `http_cache.py` *(should be added if not included)* : Manages response caching to avoid repeated HTTP requests.
 
 ---
 
