@@ -4,13 +4,6 @@
 
 <h4 align="center">Visualize a website’s structure from the command line</h4>
 
-<p align="center">
-  <a href="#context">Context</a> •
-  <a href="#features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#example">Example</a>
-</p>
-
 ---
 
 ## 🧠 Context
